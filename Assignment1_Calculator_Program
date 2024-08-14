@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    int option;
+    cout << "Calculator Program" << endl;
+    cout << "Enter value of a  : ";
+    cin >> a;
+    cout << "Enter value of b : ";
+    cin >> b;
+    cout << "Calculator Options are : " << endl;
+    ;
+    cout << "1.Addition(+)" << endl;
+    cout << "2.Subtraction(-)" << endl;
+    cout << "3.Multiplication(*)" << endl;
+    cout << "4.Division(/)" << endl;
+    cout << "5.Modulus(%)" << endl;
+    cout << "Choose which operation you want to perform: " << endl;
+    cin >> option;
+    cout << "Let's calculate!" << endl;
+    cout << "Answer is ";
+    switch (option)
+    {
+    case 1:
+    {
+        cout << a + b;
+        break;
+    }
+    case 2:
+    {
+        cout << a - b;
+        break;
+    }
+    case 3:
+    {
+        cout << a * b;
+        break;
+    }
+    case 4:
+    {
+        cout << a / b;
+        break;
+    }
+    case 5:
+    {
+        cout << a % b;
+        break;
+    }
+    default:
+    {
+        cout << "Invalid Operator entered.";
+    }
+    }
+    return 0;
+}
