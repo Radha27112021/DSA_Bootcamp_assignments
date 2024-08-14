@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int square(int n)
+{
+    return n * n;
+}
+int main()
+{
+    int num;
+    cout << "Enter any number : ";
+    cin >> num;
+    cout << "Square of a entered number is : " << square(num);
+    return 0;
+}
