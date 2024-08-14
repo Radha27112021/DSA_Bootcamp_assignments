@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Book {
+private:
+    string title;
+    string author;
+    int year;
+public:
+    // Constructor to initialize the properties
+    Book(string t, string a, int y) {
+        title = t;
+        author = a;
+        year = y;
+    }
+     // Method to display the book's information
+    void displayInfo() {
+        cout << "Title: " << title << endl;
+        cout << "Author: " << author << endl;
+        cout << "Year: " << year << endl;
+    }
+};
+int main() {
+    // Creating an instance of the Book class and initializing it using the constructor
+    Book b("The Power of Habit", "Charles Duhigg", 2012);
+    // Displaying the information of the book
+    b.displayInfo();
+    return 0;
+}
