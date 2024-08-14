@@ -1,0 +1,25 @@
+// check vowel or consonant -> take char as user input
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char input;
+    cout << "Enter any character: " << endl;
+    cin >> input;
+
+    if (input == 'a' || input == 'A' ||
+        input == 'e' || input == 'E' ||
+        input == 'i' || input == 'I' ||
+        input == 'o' || input == 'O' ||
+        input == 'u' || input == 'U')
+    {
+        cout << "Entered input is Vowel";
+    }
+    else
+    {
+        cout << "Entered input is Consonant";
+    }
+
+    return 0;
+}
