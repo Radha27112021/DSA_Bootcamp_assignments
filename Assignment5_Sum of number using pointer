@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Declare three integer variables
+    int a, b, c;
+
+    // Declare three pointers
+    int *p1, *p2, *p3;
+
+    // Assign the address of a to p1, b to p2, and c to p3
+    p1 = &a;
+    p2 = &b;
+    p3 = &c;
+
+    // Use the pointers to assign values to a, b, and c
+    *p1 = 10;  // a = 10
+    *p2 = 20;  // b = 20
+    *p3 = 30;  // c = 30
+
+    // Calculate the sum of a, b, and c using the pointers
+    int sum = *p1 + *p2 + *p3;
+
+    // Print the values of a, b, c, and sum
+    cout << "Value of a: " << a << endl;
+    cout << "Value of b: " << b << endl;
+    cout << "Value of c: " << c << endl;
+    cout << "Sum of a, b, and c: " << sum << endl;
+
+    return 0;
+}
